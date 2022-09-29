@@ -2,16 +2,28 @@ package Spil;
 
 public class Person {
 
-    public String name;
-    Person winner;
+    private String name;
+    private int point = 0;
+    public String getName() {
+        return name;
+    }
 
-
-    public Person(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
+    public void setPoint(int p){
+        this.point = p;
+    }
 
-    public void Play(Person Opponent){}
+    public int getPoint(){
+        return point;
+    }
+
+    public Person(String name) {
+        this.name = name;
+        this.point = point;
+    }
 
 
 }
