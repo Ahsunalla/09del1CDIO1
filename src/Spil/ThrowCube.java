@@ -32,9 +32,9 @@ public class ThrowCube {
         while (true) {
             if(gameEnded) {
                 if (pointsPlayer1 >= 40) {
-                    System.out.println(player1.getName() + " har vundet! ");
+                    System.out.println(player1.getName() + " has won! ");
                 } else {
-                    System.out.println(player2.getName() + " har vundet! ");
+                    System.out.println(player2.getName() + " has won! ");
                 }
                 break;
             }
@@ -42,7 +42,7 @@ public class ThrowCube {
             int num = round;
             if (num % 2 == 1) {
                 if (pointsPlayer1 < 40) {
-                    System.out.println(player1.getName() + "'s tur, kast med terningen. ");
+                    System.out.println(player1.getName() + "'s turn to throw the dice. ");
                     sc.nextLine();
 
                     player1rolledNumber1 = randomNumber.nextInt(1, 7);
@@ -70,7 +70,7 @@ public class ThrowCube {
                     continue;
                 }
             } else if (pointsPlayer2 < 40) {
-                System.out.println(player2.getName() + "'s tur, kast med terningen. ");
+                System.out.println(player2.getName() + "'s turn to throw the dice. ");
                 sc.nextLine();
 
                 player2rolledNumber1 = randomNumber.nextInt(1, 7);
