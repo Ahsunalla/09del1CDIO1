@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class ThrowCube {
     public static void main(String[] args) {
-
         System.out.println("The game has begun!");
 
         Scanner sc = new Scanner(System.in);
